@@ -81,6 +81,8 @@ footer{
     padding: 30px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     margin-bottom: 10px;
+    display:grid;
+    grid-template-columns: 1fr;
 }
 .stocks-header{
     display:flex;
@@ -88,5 +90,55 @@ footer{
     align-items: center;
     margin-bottom: 10px;
 }
-   
-
+.stocks{
+    background-color: rgb(151, 30, 30);
+    color: white;
+}
+.bg__stock{
+    background: rgba(225, 82, 82, 0.3); 
+    padding: 5px;
+    border-radius: 5px;
+}
+.bg__new__customer{
+    background: rgb(82, 139, 186); 
+    padding: 5px;
+    border-radius: 5px; 
+}
+.bg__pending{
+    background: rgb(197, 197, 48); 
+    padding: 5px;
+    border-radius: 5px; 
+}
+.new-customers{
+    background-color: steelblue;
+    color: white;
+}
+.pending{
+    background-color: rgb(205, 205, 12);
+    color: white;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 50%;
+}
+.button-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+/* .button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+} */
+@media(max-width: 768px){
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+}
