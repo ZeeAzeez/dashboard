@@ -67,6 +67,7 @@ footer{
     position: absolute;
     bottom: 1rem;
     width: 3000px;
+    padding-right: 5rem;
 }
 .navbar-menu a:hover {
     color: steelblue;
@@ -78,6 +79,7 @@ footer{
     color:white;
     background-color: rgb(230, 132, 165);
     padding: 0.5rem 1rem;
+   
 }
 
 .content{
