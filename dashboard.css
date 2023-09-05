@@ -29,9 +29,10 @@
  ul {
     list-style-type: none;
     align-items: center;
-    border: 4px solid red;
+    /* border: 4px solid red; */
     height: 90vh;
     position: relative;
+    width: 100%;
   }
 
 main{
@@ -59,15 +60,33 @@ footer{
 }
 .navbar-menu ul{
     padding: 50px;
+   
 }
 .navbar-menu ul li{
     padding: 10px;
 }
 .navbar-menu ul li:last-child{
+    background-color: rgb(230, 132, 165);
+    width: 125%;
     position: absolute;
     bottom: 1rem;
-    width: 3000px;
-    padding-right: 5rem;
+    left: 0;
+    transform: translateX(-12%);
+    /* padding: 0.3rem 0.5rem; */
+    height: 2.3rem;
+
+}
+#logout-btn{
+    color:white;
+    /* padding: 0.5rem 1rem; */
+    text-align: center;
+    margin: 0 auto;
+    /* padding: 0.3rem 0.5rem; */
+    
+}
+#logout-btn h3{
+    padding: 0.1rem 0.5rem;
+    font-size: 14px;
 }
 .navbar-menu a:hover {
     color: steelblue;
@@ -75,12 +94,7 @@ footer{
 .navbar-menu a.active{
         background-color: #04AA6D;
 }
-#logout-btn{
-    color:white;
-    background-color: rgb(230, 132, 165);
-    padding: 0.5rem 1rem;
-   
-}
+
 
 .content{
     background: #fff;
@@ -90,12 +104,15 @@ footer{
     margin-bottom: 10px;
     display:grid;
     grid-template-columns: 1fr;
+    width: 100%;
 }
 .stocks-header{
     display:flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    padding: 0.9rem 1rem;
+    width: 100%;
 }
 .stocks{
     background-color: rgb(151, 30, 30);
@@ -129,21 +146,30 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     height: 50%;
+    padding: 2rem 3rem;
 }
 .button-group{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
-    padding: 2px;
-    background-color: gainsboro;
+    /* background-color: white; */
+    width: 100%;
+    padding: 1rem;
     border-radius: 5px;
 }
+
 .button-group button{
-    padding: 5px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    background-color: gainsboro;
     border: none;
-    color: white;
-    cursor: pointer;
+    color: black;
+    font-size: 0.9rem;
+    width: 60%;
+    height: 2.3rem;
+    margin-left: 1rem auto;
 }
 
 @media(max-width: 768px){
@@ -170,6 +196,6 @@ footer{
         
         grid-template-columns: 1fr;
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2rem 3rem;
     }
 }
