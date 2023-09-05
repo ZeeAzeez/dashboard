@@ -29,6 +29,9 @@
  ul {
     list-style-type: none;
     align-items: center;
+    border: 4px solid red;
+    height: 90vh;
+    position: relative;
   }
 
 main{
@@ -60,6 +63,11 @@ footer{
 .navbar-menu ul li{
     padding: 10px;
 }
+.navbar-menu ul li:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 3000px;
+}
 .navbar-menu a:hover {
     color: steelblue;
   }
@@ -69,12 +77,9 @@ footer{
 #logout-btn{
     color:white;
     background-color: rgb(230, 132, 165);
+    padding: 0.5rem 1rem;
 }
-/* .contents{
-    display: grid;
-    background-color: steelblue;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
+
 .content{
     background: #fff;
     border-radius: 10px;
@@ -99,7 +104,7 @@ footer{
     padding: 5px;
     border-radius: 5px;
 }
-.bg__new__customer{
+.bg_new_customer{
     background: rgb(82, 139, 186); 
     padding: 5px;
     border-radius: 5px; 
@@ -131,14 +136,38 @@ footer{
     background-color: gainsboro;
     border-radius: 5px;
 }
-/* .button{
-    padding: 10px;
+.button-group button{
+    padding: 5px;
     border-radius: 5px;
     border: none;
+    color: white;
     cursor: pointer;
-} */
+}
+
 @media(max-width: 768px){
     .main-content{
         grid-template-columns: 1fr;
+        padding: 0.3rem 1rem;
+      
+    }
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    body{
+        
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 1rem 2rem;
     }
 }
